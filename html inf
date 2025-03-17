@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document1</title>
+    <style>
+       body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-image: url('24.jpg'); /* Замените на URL вашего изображения */
+            background-size: cover; /* Заполнение фона */
+            background-position: center; /* Центрирование фона */
+            position: relative; /* Позволяет использовать абсолютное позиционирование внутри body */
+        }
+        h1 {
+            position: absolute; /* Абсолютное позиционирование заголовка */
+            top: 15px; /* Расстояние от верхней части окна */
+            left: 40%; /* Смещение влево */
+            transform: translateX(-50%); /* Центрируем заголовок относительно его размеров */
+            font-size: 30px; /* Размер заголовка */
+            color: black;/* Цвет заголовка */
+        }
+        .container {
+            display: flex;
+            height: calc(100% - 60px); /* Уменьшаем высоту контейнера, чтобы учесть высоту заголовка */
+        }
+        .sidebar {
+            width: 520px; /* Ширина колонки с текстом */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Центрирование содержимого по вертикали */
+            align-items: flex-start; /* Выравнивание содержимого по горизонтали */
+            color:black; /* Цвет текста, чтобы он был виден на фоне */
+        }
+        p {
+            font-size: 20px; /* Размер текста абзаца */
+            text-align: justify; /* Выравнивание текста по ширине */
+            margin-bottom: 15px; /* Отступ снизу для разделения абзацев */
+            }
+        .mm{font-size: 26px;text-align: left; color:brown}
+        .m{font-size: 26px;text-align: left; color:brown}
+    </style>
+</head>
+<body>
+  <h1>Медведев Иван Николаевич</h1> <!-- Заголовок без тени -->
+    <div class="container">
+        <div class="sidebar">
+            <p>Звание - старший лейтенант</p>
+            <p>Место рождения - Чувашская АССР, Комсомольский р-н, д. Беззубино </p>
+            <p>Дата рождения - 29.12.1915; 
+           Дата призыва - 07.02.1940</p>
+<p>Места службы - 376 стрелковый полк 220 стрелковой дивизии; 101
+    резервный полк ЗапФ </p>
+<p>Награды героя :
+ Орден Красной Звезды 1944г;
+ Медаль «За победу над Германией в Великой Отечественной войне 1941-1945 гг.» 1945г;
+ Орден Отечественной войны I степени 1945г.</p>
+       <a class="mm" href="https://pamyat-naroda.ru/">Память народа</a>
+       <a class="m" href="https://historydepositarium.ru/">Лица победы</a>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
